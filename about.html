@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Subhojeet Ghosh</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">SG.</a>
+
+            <button class="menu-btn" id="menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="achievements.html" class="nav-link">Achievements</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i data-lucide="sun" class="icon-sun" style="display: none;"></i>
+                    <i data-lucide="moon" class="icon-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container section fade-in">
+        <h1 class="section-title">About Me</h1>
+
+        <div style="max-width: 800px; margin: 0 auto 4rem auto; text-align: center;">
+            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                I am an aspiring SDE with a strong foundation in problem-solving.
+            </p>
+            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                My journey started with preparing for the JEE exam (AIR 4314), which helped me build resilience,
+                analytical thinking, and discipline. Currently, I am a freshman at IIT Kharagpur, where I am exploring
+                diverse fields while focusing on developing core technical skills.
+            </p>
+            <p style="font-size: 1.1rem;">
+                I am actively learning DSA to sharpen my problem-solving ability, alongside Machine Learning to
+                understand the growing potential of AI-driven solutions. These dual paths allow me to strengthen both my
+                logical foundations and my ability to work on cutting-edge technologies.
+            </p>
+        </div>
+
+        <h2 style="text-align: center; margin-bottom: 3rem;">My Journey</h2>
+
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>JEE Preparation</h3>
+                    <p class="text-secondary">AIR 4314</p>
+                    <p>Built resilience, analytical thinking, and discipline through rigorous preparation.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>IIT Kharagpur</h3>
+                    <p class="text-secondary">2025 - 2029</p>
+                    <p>Freshman exploring diverse fields and focusing on core technical skills.</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>Aspiring SDE</h3>
+                    <p class="text-secondary">Present</p>
+                    <p>Learning DSA and Machine Learning to build AI-driven solutions.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/subhojeetghosh100/" target="_blank" class="social-icon"><i
+                        data-lucide="linkedin"></i></a>
+                <a href="https://www.instagram.com/subhojeet.ghosh_/" target="_blank" class="social-icon"><i
+                        data-lucide="instagram"></i></a>
+                <a href="https://www.youtube.com/@MidnightMaverick007" target="_blank" class="social-icon"><i
+                        data-lucide="youtube"></i></a>
+                <a href="mailto:subhojeetghosh100@gmail.com" class="social-icon"><i data-lucide="mail"></i></a>
+            </div>
+            <p>&copy; 2025 Subhojeet Ghosh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Subhojeet Ghosh</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">SG.</a>
+
+            <button class="menu-btn" id="menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="achievements.html" class="nav-link">Achievements</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i data-lucide="sun" class="icon-sun" style="display: none;"></i>
+                    <i data-lucide="moon" class="icon-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container section fade-in">
+        <h1 class="section-title">My Projects</h1>
+
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <i data-lucide="folder-code" size="48"></i>
+                </div>
+                <div class="project-content">
+                    <h3>AI Portfolio Website</h3>
+                    <p class="text-secondary" style="margin: 0.5rem 0;">A modern, responsive portfolio website built
+                        with HTML, CSS, and JavaScript.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <a href="#" class="btn btn-outline" style="width: 100%; text-align: center; margin-top: 1rem;">View
+                        Code</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <i data-lucide="database" size="48"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Task Management System</h3>
+                    <p class="text-secondary" style="margin: 0.5rem 0;">A C++ application to manage tasks efficiently
+                        using data structures.</p>
+                    <div class="project-tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">DSA</span>
+                        <span class="tag">CLI</span>
+                    </div>
+                    <a href="#" class="btn btn-outline" style="width: 100%; text-align: center; margin-top: 1rem;">View
+                        Code</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <i data-lucide="video" size="48"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Short Film Project</h3>
+                    <p class="text-secondary" style="margin: 0.5rem 0;">Award-winning short film edited using Premiere
+                        Pro.</p>
+                    <div class="project-tags">
+                        <span class="tag">Premiere Pro</span>
+                        <span class="tag">Editing</span>
+                        <span class="tag">Storytelling</span>
+                    </div>
+                    <a href="#" class="btn btn-outline" style="width: 100%; text-align: center; margin-top: 1rem;">Watch
+                        Video</a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <i data-lucide="cpu" size="48"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Algorithm Visualizer</h3>
+                    <p class="text-secondary" style="margin: 0.5rem 0;">Visualizing sorting algorithms to understand
+                        their mechanics.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Algorithms</span>
+                        <span class="tag">Visualization</span>
+                    </div>
+                    <a href="#" class="btn btn-outline" style="width: 100%; text-align: center; margin-top: 1rem;">View
+                        Code</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/subhojeetghosh100/" target="_blank" class="social-icon"><i
+                        data-lucide="linkedin"></i></a>
+                <a href="https://www.instagram.com/subhojeet.ghosh_/" target="_blank" class="social-icon"><i
+                        data-lucide="instagram"></i></a>
+                <a href="https://www.youtube.com/@MidnightMaverick007" target="_blank" class="social-icon"><i
+                        data-lucide="youtube"></i></a>
+                <a href="mailto:subhojeetghosh100@gmail.com" class="social-icon"><i data-lucide="mail"></i></a>
+            </div>
+            <p>&copy; 2025 Subhojeet Ghosh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

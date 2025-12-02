@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Subhojeet Ghosh</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">SG.</a>
+
+            <button class="menu-btn" id="menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="achievements.html" class="nav-link">Achievements</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i data-lucide="sun" class="icon-sun" style="display: none;"></i>
+                    <i data-lucide="moon" class="icon-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container section fade-in">
+        <h1 class="section-title">Get In Touch</h1>
+
+        <div class="contact-container">
+            <div>
+                <h2 style="margin-bottom: 1.5rem;">Let's Connect</h2>
+                <p style="margin-bottom: 2rem; font-size: 1.1rem;">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
+                    visions.
+                </p>
+
+                <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 3rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="background-color: var(--surface-color); padding: 0.75rem; border-radius: 50%;">
+                            <i data-lucide="mail" style="color: var(--accent-color);"></i>
+                        </div>
+                        <div>
+                            <p class="text-secondary" style="font-size: 0.875rem;">Email</p>
+                            <a href="mailto:subhojeetghosh100@gmail.com"
+                                style="font-weight: 500;">subhojeetghosh100@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="background-color: var(--surface-color); padding: 0.75rem; border-radius: 50%;">
+                            <i data-lucide="phone" style="color: var(--accent-color);"></i>
+                        </div>
+                        <div>
+                            <p class="text-secondary" style="font-size: 0.875rem;">Phone</p>
+                            <a href="tel:+917209797364" style="font-weight: 500;">+91 7209797364</a>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="background-color: var(--surface-color); padding: 0.75rem; border-radius: 50%;">
+                            <i data-lucide="map-pin" style="color: var(--accent-color);"></i>
+                        </div>
+                        <div>
+                            <p class="text-secondary" style="font-size: 0.875rem;">Location</p>
+                            <p style="font-weight: 500;">IIT Kharagpur, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>My YouTube Channel</h3>
+                <div
+                    style="margin-top: 1rem; padding: 1.5rem; background-color: var(--surface-color); border-radius: 1rem; box-shadow: var(--shadow);">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <i data-lucide="youtube" size="32" color="#FF0000"></i>
+                        <div>
+                            <h4 style="margin-bottom: 0;">Midnight Maverick</h4>
+                            <p class="text-secondary">Video Editing Portfolio</p>
+                        </div>
+                    </div>
+                    <a href="https://www.youtube.com/@MidnightMaverick007" target="_blank" class="btn btn-outline"
+                        style="width: 100%; text-align: center;">Visit Channel</a>
+                </div>
+            </div>
+
+            <form class="contact-form"
+                onsubmit="event.preventDefault(); alert('Thank you for your message! This is a demo form.');">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="Project Inquiry" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/subhojeetghosh100/" target="_blank" class="social-icon"><i
+                        data-lucide="linkedin"></i></a>
+                <a href="https://www.instagram.com/subhojeet.ghosh_/" target="_blank" class="social-icon"><i
+                        data-lucide="instagram"></i></a>
+                <a href="https://www.youtube.com/@MidnightMaverick007" target="_blank" class="social-icon"><i
+                        data-lucide="youtube"></i></a>
+                <a href="mailto:subhojeetghosh100@gmail.com" class="social-icon"><i data-lucide="mail"></i></a>
+            </div>
+            <p>&copy; 2025 Subhojeet Ghosh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
