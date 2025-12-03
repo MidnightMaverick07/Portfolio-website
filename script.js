@@ -58,3 +58,37 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-in').forEach(el => {
     observer.observe(el);
 });
+
+// Contact Form Handling
+const contactForm = document.getElementById('contact-form');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.innerText;
+        submitBtn.innerText = 'Sending...';
+        submitBtn.disabled = true;
+
+        // REPLACE THIS URL WITH YOUR GOOGLE APPS SCRIPT WEB APP URL
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwYt_J2xxMK53NbFsTgXitNS2oU9e72QRGwjFqoAd6F_YZq4uHSoxNQ0ZPBm3o0f9g2/exec';
+
+        fetch(scriptURL, {
+            method: 'POST',
+            body: new FormData(contactForm)
+        })
+            .then(response => {
+                alert('Thank you! Your message has been sent successfully.');
+                contactForm.reset();
+                submitBtn.innerText = originalBtnText;
+                submitBtn.disabled = false;
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                alert('Error! Please try again later.');
+                submitBtn.innerText = originalBtnText;
+                submitBtn.disabled = false;
+            });
+    });
+}
