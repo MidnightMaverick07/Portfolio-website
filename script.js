@@ -75,8 +75,9 @@ if (contactForm) {
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwYt_J2xxMK53NbFsTgXitNS2oU9e72QRGwjFqoAd6F_YZq4uHSoxNQ0ZPBm3o0f9g2/exec';
 
         fetch(scriptURL, {
-            method: 'POST',
-            body: new FormData(contactForm)
+        method: 'POST',
+        mode: 'no-cors',
+        body: new FormData(contactForm)
         })
             .then(response => {
                 alert('Thank you! Your message has been sent successfully.');
